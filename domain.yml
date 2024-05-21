@@ -1,0 +1,28 @@
+version: "3.1"
+
+intents:
+  - greet
+  - ask_course
+  - ask_admission
+  - goodbye
+
+entities:
+  - course
+  - admission
+
+responses:
+  utter_greet:
+    - text: "สวัสดีค่ะ มีอะไรให้ช่วยไหมคะ?"
+  utter_ask_course:
+    - text: "มหาวิทยาลัยของเรามีหลักสูตรต่างๆ เช่น บริหารธุรกิจ, วิศวกรรมศาสตร์, และอื่นๆ"
+  utter_ask_admission:
+    - text: "การสมัครเรียนสามารถทำได้ผ่านเว็บไซต์ของเรา"
+  utter_iamabot:
+    - text: "I am a bot, here to help you with your queries."
+  utter_goodbye:
+    - text: "ขอบคุณที่ติดต่อค่ะ สวัสดีค่ะ"
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

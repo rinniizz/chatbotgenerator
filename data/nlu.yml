@@ -1,0 +1,26 @@
+version: "3.1"
+
+nlu:
+  - intent: greet
+    examples: |
+      - สวัสดี
+      - สวัสดีค่ะ
+      - สวัสดีครับ
+
+  - intent: ask_course
+    examples: |
+      - มีหลักสูตรอะไรบ้าง
+      - หลักสูตรที่เปิดสอนมีอะไรบ้าง
+
+  - intent: ask_admission
+    examples: |
+      - การสมัครเรียนทำอย่างไร
+      - วิธีสมัครเรียนคืออะไร
+
+  - intent: goodbye
+    examples: |
+      - ขอบคุณ
+      - ลาก่อน
+      - สวัสดี
+      - ไว้เจอกันใหม่
+

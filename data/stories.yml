@@ -1,0 +1,24 @@
+version: "3.1"
+
+stories:
+  - story: greet and ask course
+    steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: ask_course
+    - action: utter_ask_course
+
+  - story: ask admission
+    steps:
+    - intent: ask_admission
+    - action: utter_ask_admission
+
+  - story: introduce bot
+    steps:
+    - intent: greet
+    - action: utter_iamabot
+
+  - story: say goodbye
+    steps:
+    - intent: goodbye
+    - action: utter_goodbye
